@@ -1,11 +1,124 @@
-:root{
-    
+:root {
+    --color1:#1b2343;
+    --color2:#424c6c;
+    --color3:#2e3dac;
+    --dark:#202336;
+    --light:#d3d6f6;
+}
+
+body { 
+    margin:0;
+    padding:0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height:1.5;
+    color:var(--dark);
+    background-color:var(--light);
+
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:45px;
+    color:var(--color3);
+}
+
+nav{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav a{
+    padding: 10px 10px;
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+.hero{
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    text-align:right;
+    background-image:url("../assets/heropic.jpg");
+    background-size:cover;
+    background-position:center;
+    min-height: 30vh;
+    padding: 10px 30px;
+}
+
+.hero div{
+    flex:0 0 90%;
+}
+
+.hero h2{
+    padding:5px 10px;
+    font-size: 30px;
+    line-height:1;
+    display:inline;
+}
+
+main{
+    margin: 30px auto;
+    max-width: 90%;
+}
+
+.subsection{
+    display:flex;
+    margin:25px 0;
+    padding: 10px 0;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    align-items:stretch;
+}
+
+.subsection div{
+    flex: 0 0 75%
+}
+
+.subsection h2{
+    text-align:right;
+    font-size: 30px;
+}
+
+/*flex stuff*/
+
+address{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+    height:100%;
+}
+
+address a{
+    padding:5px;
+    font-size:25px;
+    font-style:normal;
+
 }
 
 
-
 /* tablet */
-@media screen and (max-width: 980px){
+@media screen and (max-width: 980px) {
 
 }
 
