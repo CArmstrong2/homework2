@@ -116,6 +116,9 @@ address a{
 
 }
 
+.workflex{
+    display:flex;
+}
 
 /* tablet */
 @media screen and (max-width: 980px) {
